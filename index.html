@@ -10,9 +10,12 @@
   <body>
     <h1>Joe's Super Interesting and Fun Form</h1>
     <h2>Yayyyyyyyy</h2>
-    <form name="AwesomeForm" autocomplete>
+
+
+    <div id="form">
+    <form name="AwesomeForm" id="awesome-form" action="submit" autocomplete>
       <p>Name</p>
-      <input name="name" type="text">
+      <input name="your-name" id="your-name" type="text">
       <br>
       <br>
       <p>Gender</p>
@@ -21,17 +24,40 @@
       <input type="radio" name="gender">Other<br>
       <br>
       <br>
-      <input type="checkbox" name="question" checked>Isn't this form great?
+      <input type="checkbox" name="question" id="question" checked>Isn't this form great?
       <br>
       <br>
       <br>
-      <input type="submit" name="Let's go!">
     </form>
 
+    <button onclick="submitFunc()">Submit!</button>
+    </div>
+    <div id="success-message">
+      <h1>Success! :)</h1>
+    </div>
 
-
+    <script src="js/jquery-3.1.1.min.js"></script>
     <script>
-      document.getElementById('AwesomeForm').submit();
+      function submitFunc() {
+        var textValue = document.getElementById('your-name').value;
+        console.log(textValue);
+        if(textValue === "")
+        {
+          console.log("Error: No data in name ");
+        }
+        else if(!(document.getElementById('question').checked))
+        {
+          console.log("Error: wrong answer.");
+        }
+        else
+        {
+          console.log("Here");
+          document.getElementById("form").style.display='none';
+          document.getElementById("success-message").style.visibility = "visible";
+        }
+      }
+
+
     </script>
   </body>
 </html>
