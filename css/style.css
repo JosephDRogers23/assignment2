@@ -1,0 +1,27 @@
+
+
+/* Style for HTML form - Assignment 2. */
+
+h1 {
+  margin: 0 auto;
+  text-align: center;
+  color: blue;
+}
+
+h2 {
+  margin: 0 auto;
+  text-align: center;
+  color: brown;
+}
+
+p {
+  font-weight: bolder;
+  margin-left: 100px;
+  margin-bottom: 0;
+}
+
+input {
+  margin-left: 100px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
