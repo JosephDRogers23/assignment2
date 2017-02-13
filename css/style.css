@@ -30,3 +30,8 @@ input {
   color: green;
   visibility: hidden;
 }
+
+#error-message {
+  color: red;
+  visibility: hidden;
+}
