@@ -26,12 +26,12 @@ input {
   margin-top: 0;
 }
 
-#success-message {
+#successMessage {
   color: green;
   visibility: hidden;
 }
 
-#error-message {
+#errorMessage {
   color: red;
   visibility: hidden;
 }
